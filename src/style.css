@@ -1,1 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --color-cyan-600: #4d96a9;
+  --color-cyan-300: #8fe3f9;
+  --color-cyan-hover: #71C0D4;
+
+  --color-purple-600: #855fb1;
+  --color-purple-300: #d9b8ff;
+  --color-purple-hover: #B18BDD;
+
+  --color-slate-900: #28283d;
+  --color-slate-600: #87879d;
+  --color-slate-300: #d1d1df;
+
+  --color-white: #fafafa;
+
+  --spacing-50: 4px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-700: 56px;
+  --spacing-800: 64px;
+  --spacing-900: 72px;
+  --spacing-1000: 80px;
+  --spacing-1400: 112px;
+
+  --text-preset-1: 4rem;
+  --text-preset-1--line-height: 110%;
+  --text-preset-1--font-weight: 900;
+
+  --text-preset-2: 2.5rem;
+  --text-preset-2--line-height: 110%;
+  --text-preset-2--font-weight: 900;
+
+  --text-preset-3: 1rem;
+  --text-preset-3--line-height: 110%;
+  --text-preset-3--letter-spacing: 0.25rem;
+  --text-preset-3--font-weight: 900;
+
+  --text-preset-4: 1.125rem;
+  --text-preset-4--line-height: 110%;
+  --text-preset-4--font-weight: 500;
+
+  --text-preset-5: 1rem;
+  --text-preset-5--line-height: 150%;
+  --text-preset-5--font-weight: 900;
+}
+
+@custom-variant hocus (&:hover, &:focus);
+
