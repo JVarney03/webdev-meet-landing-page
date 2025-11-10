@@ -1,14 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
 
+:root {
+  --grid-template-small: [full-start] minmax(4px, 32px) [main-start] 1fr
+    [main-end] minmax(4px, 32px) [full-end];
+
+  --grid-template-medium: [full-start] 32px [wide-start] 110px [main-start] 1fr
+    [main-end] 110px [wide-end] 32px [full-end];
+
+  --grid-template-large: [full-start] 1fr [wide-start] 2fr [main-start] 4fr
+    [main-end] 2fr [wide-end] 1fr [full-end];
+}
+
+@custom-variant hocus (&:hover, &:focus);
+
 @theme {
   --color-cyan-600: #4d96a9;
   --color-cyan-300: #8fe3f9;
-  --color-cyan-hover: #71C0D4;
+  --color-cyan-hover: #71c0d4;
 
   --color-purple-600: #855fb1;
   --color-purple-300: #d9b8ff;
-  --color-purple-hover: #B18BDD;
+  --color-purple-hover: #b18bdd;
 
   --color-slate-900: #28283d;
   --color-slate-600: #87879d;
@@ -50,5 +63,8 @@
   --text-preset-5--font-weight: 900;
 }
 
-@custom-variant hocus (&:hover, &:focus);
-
+@layer components {
+  .button {
+    @apply text-preset-5 rounded-full px-10 py-4 text-white transition duration-500 ease-in-out whitespace-nowrap overflow-hidden;
+  }
+}

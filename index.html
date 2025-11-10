@@ -14,106 +14,137 @@
     <title>Frontend Mentor | Meet landing page</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body class="font-redhat bg-white">
-    <main class="w-sreen min-h-screen bg-white align-middle">
-      <div class="flex flex-col items-center justify-center">
+  <body class="font-redhat bg-white text-center">
+    <div
+      class="grid min-h-screen w-screen grid-cols-(--grid-template-small) content-start overflow-hidden sm:grid-cols-(--grid-template-medium) lg:grid-cols-(--grid-template-large)"
+    >
+      <header class="col-[full]">
         <img
           class="mx-auto mt-500 mb-800"
           src="./assets/logo.svg"
           alt="Meet logo"
         />
+      </header>
+      <main class="col-[full] grid grid-cols-subgrid justify-items-center">
         <img
-          class="relative w-[110vw] max-w-none"
+          class="col-[full] w-[110vw] max-w-[110vw] object-cover lg:hidden"
           src="assets/tablet/image-hero.png"
           alt="multiple photos of people"
         />
-      </div>
-      <div
-        class="relative z-10 flex flex-col items-center px-400 pt-400 text-center"
-      >
-        <h1 class="text-preset-2 mb-300 text-slate-900">
-          Group Chat for Everyone
-        </h1>
-        <p class="text-preset-5 mb-300 font-normal text-slate-600">
-          Meet makes it easy to connect with others face-to-face virtually and
-          collaborate across any device.
-        </p>
-        <button
-          type="button"
-          class="text-preset-5 hocus:bg-cyan-hover mb-200 rounded-4xl bg-cyan-600 px-10 py-4 text-white transition duration-500 ease-in-out"
-        >
-          Download <span class="text-cyan-300">V1.3</span>
-        </button>
-        <button
-          type="button"
-          class="text-preset-5 hocus:bg-purple-hover mb-800 rounded-4xl bg-purple-600 px-10 py-4 text-white transition duration-500 ease-in-out"
-        >
-          What is it?
-        </button>
-        <div class="h-1000 border border-slate-300"></div>
+        <img
+          class="relative -left-6 col-span-2 col-start-1 hidden justify-self-start object-fill lg:block xl:justify-self-end"
+          src="./assets/desktop/image-hero-left.png"
+          alt="multiple photos of people"
+        />
+        <section class="col-[main] mt-800 mb-800">
+          <h1 class="text-preset-2 lg:text-preset-1 mb-300 text-slate-900">
+            Group Chat for Everyone
+          </h1>
+          <p class="text-preset-5 mb-300 font-normal text-slate-600">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div
+            class="flex flex-col items-center gap-200 sm:flex-row sm:justify-center"
+          >
+            <button
+              type="button"
+              class="button hocus:bg-cyan-hover bg-cyan-600"
+            >
+              Download <span class="text-cyan-300">V1.3</span>
+            </button>
+            <button
+              type="button"
+              class="button hocus:bg-purple-hover bg-purple-600"
+            >
+              What is it?
+            </button>
+          </div>
+        </section>
+        <img
+          class="relative -right-6 col-span-2 col-start-4 hidden self-center justify-self-end lg:block xl:justify-self-start"
+          src="./assets/desktop/image-hero-right.png"
+          alt="multiple photos of people"
+        />
+        <div class="col-[main] grid justify-items-center">
+          <div class="h-1000 border border-slate-300"></div>
+          <div
+            class="flex h-700 w-700 items-center justify-center rounded-full border border-slate-300"
+          >
+            <span class="text-preset-5 text-slate-600">01</span>
+          </div>
+        </div>
+        <div class="col-[main] w-full sm:col-[wide]">
+          <div
+            class="my-800 grid w-full grid-cols-2 grid-rows-2 gap-200 sm:grid-cols-4 sm:grid-rows-1"
+          >
+            <img
+              class="w-full rounded-lg"
+              src="./assets/desktop/image-woman-in-videocall.jpg"
+              alt="Woman in video call"
+            />
+            <img
+              class="w-full rounded-lg"
+              src="./assets/desktop/image-women-videochatting.jpg"
+              alt="Women in video call"
+            />
+            <img
+              class="w-full rounded-lg"
+              src="./assets/desktop/image-men-in-meeting.jpg"
+              alt="Men in meeting"
+            />
+            <img
+              class="w-full rounded-lg"
+              src="./assets/desktop/image-man-texting.jpg"
+              alt="Man in texting"
+            />
+          </div>
+        </div>
+        <section class="col-[main]">
+          <p class="text-preset-3 mb-200 text-xs text-cyan-600">
+            BUILT FOR MODERN USE
+          </p>
+          <h2 class="text-preset-2 mb-400 text-3xl text-slate-900">
+            Smarter meetings, all in one place
+          </h2>
+          <p class="text-preset-5 mb-800 font-normal text-slate-600">
+            Send messages, share files, show your screen, and record your
+            meetings — all in one workspace. Control who can join with
+            invite-only team access, data encryption, and data export.
+          </p>
+        </section>
+        <div class="z-1 col-[main] grid justify-items-center">
+          <div class="h-1000 border border-slate-300"></div>
+          <div
+            class="flex h-700 w-700 items-center justify-center rounded-full border border-slate-300 bg-white"
+          >
+            <span class="text-preset-5 text-slate-600">02</span>
+          </div>
+        </div>
+      </main>
+      <footer class="col-[full] -mt-7 grid grid-cols-subgrid">
         <div
-          class="flex h-700 w-700 items-center justify-center rounded-full border border-slate-300"
-        >
-          <span class="text-preset-5 text-slate-600">01</span>
-        </div>
-        <div class="my-800 grid grid-cols-2 grid-rows-2 gap-200">
-          <img
-            class="rounded-lg"
-            src="./assets/desktop/image-woman-in-videocall.jpg"
-            alt="Woman in video call"
-          />
-          <img
-            class="rounded-lg"
-            src="./assets/desktop/image-women-videochatting.jpg"
-            alt="Women in video call"
-          />
-          <img
-            class="rounded-lg"
-            src="./assets/desktop/image-men-in-meeting.jpg"
-            alt="Men in meeting"
-          />
-          <img
-            class="rounded-lg"
-            src="./assets/desktop/image-man-texting.jpg"
-            alt="Man in texting"
-          />
-        </div>
-        <p class="text-preset-3 mb-200 text-xs text-cyan-600">
-          BUILT FOR MODERN USE
-        </p>
-        <h2 class="text-preset-2 mb-400 text-3xl text-slate-900">
-          Smarter meetings, all in one place
-        </h2>
-        <p class="text-preset-5 mb-800 font-normal text-slate-600">
-          Send messages, share files, show your screen, and record your meetings
-          — all in one workspace. Control who can join with invite-only team
-          access, data encryption, and data export.
-        </p>
-        <div class="h-1000 border border-slate-300"></div>
+          class="col-[full] row-start-1 w-full bg-[url(/assets/mobile/image-footer.jpg)] bg-cover bg-center"
+        ></div>
+        <div class="col-[full] row-start-1 bg-cyan-600/90"></div>
         <div
-          class="flex h-700 w-700 items-center justify-center rounded-full border border-slate-300 bg-white"
+          class="col-[main] row-start-1 px-400 py-800 text-white lg:col-[wide] lg:grid lg:grid-cols-[2fr_2fr_1fr] lg:place-items-start lg:gap-20 lg:px-0 lg:text-left"
         >
-          <span class="text-preset-5 text-slate-600">02</span>
-        </div>
-      </div>
-      <footer
-        class="relative -mt-7 flex flex-col items-center bg-[url(/assets/mobile/image-footer.jpg)] bg-cover bg-center px-400 py-800 text-center text-white"
-      >
-        <div class="absolute inset-0 bg-cyan-600/90"></div>
-        <div class="relative">
-          <h2 class="text-preset-2 mb-300">Experiance more together</h2>
-          <p class="text-preset-5 mb-300 font-normal">
+          <h2 class="text-preset-2 m-0 mb-300 lg:m-0">
+            Experiance more together
+          </h2>
+          <p class="text-preset-5 mb-300 font-normal lg:m-0">
             Stay connected with reliable HD meetings and unlimited one-on-one
             and group video sessions.
           </p>
           <button
             type="button"
-            class="text-preset-5 mb-200 rounded-4xl bg-purple-600 px-10 py-4 text-white transition duration-500 ease-in-out hocus:bg-purple-hover"
+            class="button hocus:bg-purple-hover mb-200 bg-purple-600 px-10 py-4 lg:m-0"
           >
             Download <span class="text-purple-300">V1.3</span>
           </button>
         </div>
       </footer>
-    </main>
+    </div>
   </body>
 </html>
